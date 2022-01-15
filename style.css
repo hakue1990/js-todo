@@ -16,7 +16,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   flex-direction: column;
   background: var(--seconday);
 }
@@ -24,11 +24,14 @@ form {
   background-color: var(--primary);
   min-height: 600px;
   width: 500px;
-  text-align: center;
-  padding-top: 1rem;
+  padding-top: 2.6rem;
+  padding-bottom: 2.6rem;
   position: relative;
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .form--header {
   display: flex;
@@ -58,4 +61,53 @@ form .form--input {
   border: none;
   outline: none;
   padding-left: 10px;
+  margin-bottom: 30px;
+}
+.form--list {
+  width: 1260px;
+  border-radius: 10px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 25px;
+  padding: 5px;
+  padding-left: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  list-style-type: none;
+  width: 330px;
+  margin: 10px;
+}
+.todo li {
+  flex: 1;
+}
+.todo--button__complete,
+.todo--button__delete {
+  width: 30px;
+  height: 30px;
+  border: none;
+  margin: 2px;
+  border-radius: 5px;
+  transition: background, 0.5s ease;
+}
+.todo--button__complete:hover,
+.todo--button__delete:hover {
+  cursor: pointer;
+}
+.todo--button__complete {
+  background-color: rgb(57, 231, 57);
+}
+.todo--button__delete {
+  background-color: rgb(245, 218, 63);
+}
+button i {
+  color: black;
+  font-size: 20px;
 }
