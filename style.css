@@ -84,6 +84,7 @@ form .form--input {
   list-style-type: none;
   width: 330px;
   margin: 10px;
+  transition: all .3s ease;
 }
 .todo li {
   flex: 1;
@@ -111,4 +112,12 @@ button i {
   color: black;
   font-size: 20px;
   pointer-events: none;
+}
+.completed {
+  text-decoration: line-through;
+  opacity: .5;
+}
+.fall {
+  transform: translateY(80px) rotateZ(45deg);
+  opacity: 0;
 }
